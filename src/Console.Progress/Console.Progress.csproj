@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Authors>Bezzad</Authors>
+    <Product>Console.Progress</Product>
+    <PackageProjectUrl>https://github.com/bezzad/Console.Progress</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Description>A Simple .NET package to displaying progress in console applications.</Description>
+    <Copyright>Copyright (c) Behzad Khosravifar</Copyright>
+    <RepositoryUrl>https://github.com/bezzad/Console.Progress</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>csharp command-line dotnet progress-bar</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\net8.0\Console.Progress.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\net8.0\Console.Progress.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
